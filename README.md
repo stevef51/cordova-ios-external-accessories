@@ -242,9 +242,11 @@ Will listen to External Accessory device Connects and Disconnects and call the `
 ### On success
 - args: An object of type
 
+_
+
     args: {
         event: "connected" or "disconnected"        
-
+    
         name: accessory.name,                               // String
         id: accessory.connectionID,                         // Number
         connected: accessory.connected,                     // Bool
