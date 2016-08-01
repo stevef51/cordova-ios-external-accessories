@@ -71,6 +71,7 @@ This maps directly to a call to
 ## On success
 - deviceArray:  Array of objects of type
 
+    ```
     device: {
         name: accessory.name,                               // String
         id: accessory.connectionID,                         // Number
@@ -82,7 +83,8 @@ This maps directly to a call to
         hardwareRevision: accessory.hardwareRevision,       // String
         protocolStrings: accessory.protocolStrings          // String []
     }
-
+    ```
+    
 ## connect
 
 Attempt to connect to a device
@@ -212,6 +214,7 @@ Will list all currently connected sessions recorded by the plugin.  Can be usefu
 ### On success
 - sessionArray: An array of objects (similar to listDevices) of type
 
+    ```
     session: {
         sessionId: session ID                               // String
 
@@ -225,6 +228,7 @@ Will list all currently connected sessions recorded by the plugin.  Can be usefu
         hardwareRevision: accessory.hardwareRevision,       // String
         protocolStrings: accessory.protocolStrings          // String []
     }
+    ```
 
 ## subscribeDeviceChanges
 
@@ -242,8 +246,7 @@ Will listen to External Accessory device Connects and Disconnects and call the `
 ### On success
 - args: An object of type
 
-_
-
+    ```
     args: {
         event: "connected" or "disconnected"        
     
@@ -257,6 +260,7 @@ _
         hardwareRevision: accessory.hardwareRevision,       // String
         protocolStrings: accessory.protocolStrings          // String []
     }
+    ```
 
 ## unsubscribeDeviceChanges
  
