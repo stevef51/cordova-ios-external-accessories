@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.virtualmgr.iOSExternalAccessory" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>iOSExternalAccessory</name>
+	<platform name="ios">
+        <js-module name="iOSExternalAccessory" src="www/iOSExternalAccessory.js">
+            <clobbers target="cordova.plugins.iOSExternalAccessory" />
+        </js-module>
+		<config-file parent="/*" target="config.xml">
+			<feature name="iOSExternalAccessory">
+				<param name="ios-package" value="iOSExternalAccessory" />
+			</feature>
+		</config-file>
+        <config-file target="*-Info.plist" parent="UISupportedExternalAccessoryProtocols">
+            <array>
+                <string>uk.co.etiltd.bluetherm1</string>
+            </array>
+        </config-file>
+		<source-file src="src/ios/iOSExternalAccessory.m" />
+		<framework src="ExternalAccessory.framework" />
+	</platform>
+</plugin>
