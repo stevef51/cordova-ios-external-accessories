@@ -1,0 +1,25 @@
+{
+  "name": "cordova-ios-external-accessories",
+  "version": "1.0.0",
+  "description": "Access the iOS External Accessory API as a Cordova plugin",
+  "cordova": {
+    "id": "com.virtualmgr.iOSExternalAccessory",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevef51/cordova-ios-external-accessories.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stevef51/cordova-ios-external-accessories/issues"
+  },
+  "homepage": "https://github.com/stevef51/cordova-ios-external-accessories#readme"
+}
